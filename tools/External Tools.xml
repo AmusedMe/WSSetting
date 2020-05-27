@@ -1,0 +1,37 @@
+<toolSet name="External Tools">
+  <tool name="[Portal 5523]SVN Update" description="svn update command" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="true" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="D:\Program Files\TortoiseSVN\bin\svn.exe" />
+      <option name="PARAMETERS" value="update" />
+      <option name="WORKING_DIRECTORY" value="D:/CMIOT/Codes/portal-201905" />
+    </exec>
+  </tool>
+  <tool name="[Portal]SVN Update" description="svn update command" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="true" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="D:\Program Files\TortoiseSVN\bin\svn.exe" />
+      <option name="PARAMETERS" value="update" />
+      <option name="WORKING_DIRECTORY" value="D:/CMIOT/Codes/portal-201905" />
+    </exec>
+  </tool>
+  <tool name="[Stg]SVN COMMIT" description="svn commit command" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="true" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="D:\Program Files\TortoiseSVN\bin\svn.exe" />
+      <option name="PARAMETERS" value="commit -m &quot;Commit To Test Env.&quot;" />
+      <option name="WORKING_DIRECTORY" value="D:/CMIOT/Envs/Stg" />
+    </exec>
+  </tool>
+  <tool name="Git Pull Front" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="true" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="D:\Program Files\Git\bin\git.exe" />
+      <option name="PARAMETERS" value="pull" />
+      <option name="WORKING_DIRECTORY" value="D:/CMIOT/Codes/portal_front" />
+    </exec>
+  </tool>
+  <tool name="Git Pull Dst" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="true" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="D:\Program Files\Git\bin\git.exe" />
+      <option name="PARAMETERS" value="pull" />
+      <option name="WORKING_DIRECTORY" value="D:/CMIOT/Codes/portal_2.0/portal/portal-front/portal-front-web/src/main/resources/static" />
+    </exec>
+  </tool>
+</toolSet>

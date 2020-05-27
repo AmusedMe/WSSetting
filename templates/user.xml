@@ -1,0 +1,78 @@
+<templateSet group="user">
+  <template name="$http2" value="      $http({&#10;        method: 'GET',&#10;        url: ''&#10;      }).then(function success(resp) {&#10;        if (angular.lowercase(resp.data.SUCCESS) === 'success') {&#10;          &#10;        } else {&#10;          &#10;        }&#10;      }, function (err) {&#10;        if (err) {&#10;        }&#10;      });" description="only Success!" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="$http" value="      $http({&#10;        method: 'GET',&#10;        url: '$text$'&#10;      }).then(function(resp) {&#10;        if (Number(resp.data.code) === 200 &amp;&amp; angular.lowercase(resp.data.flag) === 'success') {&#10;&#10;        }&#10;      });" description="$http" toReformat="false" toShortenFQNames="true">
+    <variable name="text" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rns" value="$rootScope.$Notification.success('$text$');" description="success" toReformat="false" toShortenFQNames="true">
+    <variable name="text" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rnw" value="$rootScope.$Notification.warning('$text$');" description="warning" toReformat="false" toShortenFQNames="true">
+    <variable name="text" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rne" value="$rootScope.$Notification.error('$text$');" description="error" toReformat="false" toShortenFQNames="true">
+    <variable name="text" expression="" defaultValue="Error" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="usera" value="/*&#10;* File: $fileName$.&#10;* Created by $user$ on $date$ $time$.&#10;* Contact me via Email: i@qr521.cn.&#10;*/" description="ceate infos." toReformat="false" toShortenFQNames="true">
+    <variable name="fileName" expression="fileName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="user" expression="user()" defaultValue="" alwaysStopAt="true" />
+    <variable name="date" expression="date()" defaultValue="" alwaysStopAt="true" />
+    <variable name="time" expression="time()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="userm" value="/*&#10;*       MODIFICATION&#10;* Modification Subject: $subject$&#10;* Modification Content: 如下：&#10;* Modification Presenter: $presenter$&#10;* Modification Operator: $user$&#10;* Backend User: $backUser$&#10;* Test User: $testUser$&#10;* Modification Time: $date$ $time$&#10;*/" description="user modify infos" toReformat="false" toShortenFQNames="true">
+    <variable name="subject" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="presenter" expression="" defaultValue="提出者" alwaysStopAt="true" />
+    <variable name="user" expression="user()" defaultValue="" alwaysStopAt="true" />
+    <variable name="backUser" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="testUser" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="date" expression="date()" defaultValue="" alwaysStopAt="true" />
+    <variable name="time" expression="time()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="log" value="console.log('$MESSAGE$: ', $PARAM$);" description="console.log" toReformat="false" toShortenFQNames="true">
+    <variable name="MESSAGE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ter" value="$COND$ ? $EXPR$ : $END$;" description="ternary operator" toReformat="false" toShortenFQNames="true">
+    <variable name="COND" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ifel" value="if ($COND$) {&#10;  $END$&#10;} else {&#10;}" description="if else" toReformat="false" toShortenFQNames="true">
+    <variable name="COND" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="if" value="if ($COND$) {&#10;  $END$&#10;}" description="if condition" toReformat="false" toShortenFQNames="true">
+    <variable name="COND" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>
